@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args)
     {
@@ -11,7 +14,16 @@ public class Main {
 
         int subtrair = subtrai(multiplicar);
 
+        ArrayList<Integer> buscaPorResultado = new ArrayList<>();
+        buscaPorResultado.add(somar);
+        buscaPorResultado.add(dividir);
+        buscaPorResultado.add(multiplicar);
+        buscaPorResultado.add(subtrair);
+        System.out.println(buscaPorResultado);
     }
+
+
+
     public static int soma(int a,int b) {
      int total = a+b;
 
@@ -38,5 +50,6 @@ public class Main {
         System.out.println("O resultado da subtração é " + total4);
         return total4;
     }
+
 
 }
