@@ -19,13 +19,9 @@ public class Main {
         buscaPorResultado.add(dividir);
         buscaPorResultado.add(multiplicar);
         buscaPorResultado.add(subtrair);
-        System.out.println(buscaPorResultado);
-            for (Integer item: buscaPorResultado) {
-                if (item < 0 * -1) {
-                System.out.println("O resultado da subtração agora é " + item);
-
-                }
-            }
+        buscaPorResultado.forEach(buscaPorResultado -> {
+            System.out.println(Math.abs(buscaPorResultado));
+        });
     }
 
 
